@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #171717;
+}
+
+
+.intro {
+  display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 45px;
+    background-color: white;
+}
+
+.intro h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 0.95;
+    letter-spacing: -2px;
+    background: linear-gradient(120deg, #1710bd, #a000a8);
+    color: #6200a5;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features {
+    list-style: none;
+    display: grid;
+    gap: 22px;
+    color: #5b168f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  grid-template-areas: 
+   "cover cover cover contents contents contents"
+   "team contact contact contact testimonials testimonials" 
+   "project project project rates rates rates";
+   gap: 20px;
+   padding: 20px;        
+   background-color: #050505;
+}
+
+.slide {
+    min-width: 0;
+    min-height: 190px;
+    padding: 24px;
+    overflow: hidden;
+    background: blueviolet;
+    color: white;
+}
+
+.cover{
+grid-area: cover;
+color: white;
+}
+
+.contact-info {
+    background: white;
+    color: #4f1685;
+    display: grid;
+    align-content: center;
+    gap: 15px;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.contents{
+grid-area: contents;
+color: white;
+display: grid;
+grid-template-columns: 1fr, 1fr;
+align-items: center;
+gap: 15px;
+}
+
+.team{
+grid-area: team;
+color: white;
+}
+
+.contact{
+grid-area: contact;
+color: white;
+}
+
+.testimonials{
+  grid-area: testimonials;
+  color: white;
+}
+
+.project {
+  grid-area:project ;
+  color: white;
+}
+
+.rates{
+  grid-area: rates;
+}
