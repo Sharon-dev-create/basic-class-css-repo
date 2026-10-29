@@ -1,111 +1,59 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
   box-sizing: border-box;
+  margin: 0;
+padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #171717;
-}
-
-
-.intro {
+.main {
   display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    gap: 30px;
-    padding: 45px;
-    background-color: white;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 30px;
+ background-color: rgb(245, 238, 229);
+padding: 20px;
 }
 
-.intro h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    line-height: 0.95;
-    letter-spacing: -2px;
-    background: linear-gradient(120deg, #1710bd, #a000a8);
-    color: #6200a5;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+img {
+ width: 100%;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
 }
 
-.features {
-    list-style: none;
-    display: grid;
-    gap: 22px;
-    color: #5b168f;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
+.card1 {
+  background-color:rgb(247, 244, 241);
+  border-radius: 10px;
 }
 
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-
-  grid-template-areas: 
-   "cover cover cover contents contents contents"
-   "team contact contact contact testimonials testimonials" 
-   "project project project rates rates rates";
-   gap: 20px;
-   padding: 20px;        
-   background-color: #050505;
+.card1:hover {
+    transition: all 0.4s ease;
+    transform: translateX(-5px);
+    box-shadow: 0 8px 20px rgba(18, 19, 18, 0.461);
 }
 
-.slide {
-    min-width: 0;
-    min-height: 190px;
-    padding: 24px;
-    overflow: hidden;
-    background: blueviolet;
-    color: white;
+.h {
+  padding: 30px;
 }
 
-.cover{
-grid-area: cover;
-color: white;
+.h button {
+  padding: 8px 18px;
+  background-color: rgb(251, 240, 226);
+  border-radius: 20px;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
 }
 
-.contact-info {
-    background: white;
-    color: #4f1685;
-    display: grid;
-    align-content: center;
-    gap: 15px;
-    font-size: 0.8rem;
-    overflow-wrap: anywhere;
+.h p{
+
+  margin: 12px 0 20px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
-.contents{
-grid-area: contents;
-color: white;
-display: grid;
-grid-template-columns: 1fr, 1fr;
-align-items: center;
-gap: 15px;
+.h h2,
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.team{
-grid-area: team;
-color: white;
-}
-
-.contact{
-grid-area: contact;
-color: white;
-}
-
-.testimonials{
-  grid-area: testimonials;
-  color: white;
-}
-
-.project {
-  grid-area:project ;
-  color: white;
-}
-
-.rates{
-  grid-area: rates;
+.card3 {
+  grid-column: 1 / 3;
 }
