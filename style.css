@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F0E6;
+
+}
+.parent{
+    width: 80%;
+    height: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,200px);
+    grid-gap: 15px;
+}
+.one{
+    border-radius: 10px;
+    box-shadow: 50px auto black;
+    background-color: #f5ba6d;
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+.one:hover {
+    transition: all 0.2s ease;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.hand{
+    background-color: white;
+    height: 65%;
+    border-radius: 10px 10px 0px 0px;
+}
+#jos h4{
+    font-size: 9px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#jos p{
+     font-size: 8px;
+    padding-left: 10px;
+}
+#are{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 3em; */
+    gap: 10px;
+    font-size: 9px;
+    
+}
+#are a{
+    text-decoration: none;
+    color: #111111;
+}
+#are a:hover{
+    color: aquamarine;
+}
+#btn{
+    background-color: rgb(5, 53, 5);
+    border-radius: 15px;
+    margin-right: 2em;
+    border: none;
+    color: white;
+    font-size: 6px;
+    padding: 7px;
+    cursor: pointer;
+}
+#btn:hover{
+    color: grey;
+}
+img{
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+h3{
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.hand p{
+    font-size: 10px;
+    margin-left: 1em;
+    margin-top: 5px;
+}
+footer{
+    display: flex;
+    margin-top: 1em;
+    gap: 10px;
+}
+#ort{
+    background-color: #111111;
+    border: solid black;
+    color: white;
+    font-size: 10px;
+    margin-left: 1em;
+}
+#ort:hover{
+    color: gray;
+}
+#ome{
+    background-color: green;
+    border: solid green;
+    color: white;
+    font-size: 10px;
+}
+#ome:hover{
+    color: skyblue;
+}
+.form h3{
+    font-family: serif;
+}
+.form p{
+    margin-left: 2em;
+    margin-top: 1em;
+}
+button{
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 2em;
+    color: #fcd29b;
+    color: #111111;
+}
+.two{
+    border-radius: 10px;
+    box-shadow: 20px auto black;
+    background-color: red;
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+.three{
+    border-radius: 10px;
+    box-shadow: 20px auto black;
+    background-color: blue;
+    grid-column: span 4;
+    grid-row: span 2;
+
+}
